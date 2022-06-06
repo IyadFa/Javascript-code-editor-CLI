@@ -1,0 +1,34 @@
+{
+  "name": "eyad_cli",
+  "version": "1.0.8",
+  "description": "This is a Javascript CLI made with Typescript to code on the go. This project is still in development and you can use it for educational purposes",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsc --watch --preserveWatchOutput",
+    "prepublishOnly": "esbuild src/index.ts --platform=node --outfile=dist/index.js --bundle --minify --define:process.env.NODE_ENV=\\\"production\\\""
+  },
+  "keywords": [
+    "typescript",
+    "javascript",
+    "cli",
+    "api"
+  ],
+  "author": "Eyad Frawati <eyad.frawati@gmail.com> (https://eyadfrawati.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "@eyad_cli/local-client": "^1.0.1"
+  },
+  "devDependencies": {
+    "@eyad_cli/local-api": "^1.0.1",
+    "@types/node": "^14.14.22",
+    "commander": "^7.0.0",
+    "esbuild": "0.8.26",
+    "typescript": "^4.1.3"
+  }
+}

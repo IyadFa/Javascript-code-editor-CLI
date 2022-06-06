@@ -1,0 +1,1 @@
+[{"content":"import React, { useState } from 'react';\n\nconst App = () => {\n  const [name, setName] = useState('EYAD');\n\n  return <h1>{name}</h1>;\n};\n\nshow(<App />);","type":"code","id":"a7tm5"}]
