@@ -2,6 +2,8 @@
 
 This is a Javascript CLI made with Typescript to code on the go. This project is still in development and you can use it for educational purposes.
 
+You may find this code as npm packe on https://www.npmjs.com/package/eyad_cli
+
 # How to get started
 
 Run `npm install eyad_cli` to install the package.
